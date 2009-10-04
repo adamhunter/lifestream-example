@@ -1,0 +1,11 @@
+<% unless @lifestream.branches.blank? -%>
+  <ul>
+  <% @lifestream.branches[0..20].each do |branch| -%>
+    <li class="<%= branch.channel.name %>">
+      <%= twitterfy branch.title %>
+    </li>
+  <% end -%>
+  </ul>
+<% else -%>
+  There is nothing in the lifestream!
+<% end -%>
