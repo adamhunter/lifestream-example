@@ -15,3 +15,4 @@ Rails::Initializer.run do |config|
 end
 
 Lifestream.options[:config] = "#{RAILS_ROOT}/config/lifestream.yml"
+Lifestream.options[:cache_expiration] = 2.hours
